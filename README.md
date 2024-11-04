@@ -15,7 +15,9 @@ struct Patient {
     Patient* next;
 };
 struct Patient*head=NULL;
-void addPatient( int token_number, string name, int age, string gender, string disease) {
+
+void addPatient( int token_number, string name, int age, string gender, string disease) 
+{
         Patient* newPatient = new Patient{token_number ,name, age, gender, disease, nullptr};
           if (head==NULL) {
             head = newPatient;
